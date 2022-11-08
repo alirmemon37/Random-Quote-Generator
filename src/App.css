@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(44, 62, 80);
+    color: #2c3e50;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.quote-box {
+    width: 80%;
+    max-width: 800px;
+    background-color: #FFF;
+    padding: 2.4rem 3.2rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.quote {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.author {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 1.8rem;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(44, 62, 80);
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.tweet-quote-btn {
+    padding: 0.4rem;
+}
+
+.new-quote-btn {
+    padding: 0.4rem 0.8rem;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.developer-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem;
+    color: #FFF;
 }
